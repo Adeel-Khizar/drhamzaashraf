@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.header {
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for background-color */
+}
+
+.header-scrolled {
+  /* background-image: url('/f9130e0aa3.jpg') !important;
+  background-size: cover;
+  background-position: left bottom ;
+  background-repeat: no-repeat;  */
+  background-color: white !important;
+}
+
+.header {
+  background-color: transparent; /* Default background color */
+}

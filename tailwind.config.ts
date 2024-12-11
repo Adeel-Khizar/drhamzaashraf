@@ -9,8 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
+        lightblue: "#2EA6F7", 
+        darkblue: "#243FF9",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        unbounded: ['var(--unbounded)', 'sans-serif'],
+        caladea: ['var(--caladea)', 'sans-serif'],
       },
     },
   },
