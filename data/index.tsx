@@ -36,38 +36,87 @@ export const TrustBadgesInfo = [
   {
     id:1,
     image:'/heart-angle-svgrepo-com 1.png',
-    title: 'We Deliver Excellence',
-    description: 'We Deliver Excellence signifies our unwavering commitment to consistently providing top-quality results and outstanding service.'
+    image1:'/tl (1).jpg',
+
+    title: 'PREGNANCY COURSE',
+    description: 'With a focus on maternal health and fetal well-being, Dr. Hamza provides personalized prenatal care, monitoring the progress of pregnancy and addressing any concerns along the way.'
   },
   {
     id:2,
     image:'/heart-pulse-2-svgrepo-com 1 (1).png',
-    title: '24/7 We Work',
-    description: '24/7 We Work highlights our dedication to being available and operational around the clock, ensuring continuous support and service.'
-  },
+    image1:'/tl (2).jpg',
+    title: 'FEMALE INFERTILITY COURSE',
+    description: "With a compassionate approach and advanced medical techniques, Dr. Hamza provides personalized treatment plans tailored to each patient's unique needs."
+  },  
   {
     id:3,
     image:'/medicine-capsule-svgrepo-com 1 (1).png',
-    title: 'Awesome Experience Team',
-    description: 'Awesome Experience Team refers to a group of dedicated professionals focused on delivering exceptional customer experiences through expertise, creativity, and personalized service'
+    image1: "/tl (3) 1 (1).png",
+    title: 'PCOS MANAGEMENT',
+    description: "Dr. Hamza's renowned treatment for Polycystic Ovary Syndrome (PCOS) and irregular periods has transformed the lives of countless women"
   },
   {
     id:4,
     image:'/weight-svgrepo-com 1 (1).png',
-    title: 'Awesome Experience Team',
-    description: 'Awesome Experience Team refers to a group of dedicated professionals focused on delivering exceptional customer experiences through expertise, creativity, and personalized service'
+    image1: "/tl (4).jpg",
+    title: 'WEIGHT LOSS',
+    description: "Dr. Hamza's weight loss treatment plan is a personalized and all-encompassing approach aimed at helping individuals attain their health and wellness objectives."
   },
   {
     id:5,
     image:'/hearts-fill-svgrepo-com 1 (1).png',
-    title: 'Awesome Experience Team',
-    description: 'Awesome Experience Team refers to a group of dedicated professionals focused on delivering exceptional customer experiences through expertise, creativity, and personalized service'
+    image1: "/tl (5).jpg",
+
+    title: 'SHADI COURSE',
+    description: "Dr Hamza specializes in treating unmarried males and females who are about to get married. Contact now and discuss your personal matters so you don't have problems after your marriage."
   },
   {
     id:6,
     image:'/doctor-male-svgrepo-com 1 (1).png',
-    title: 'Awesome Experience Team',
-    description: 'Awesome Experience Team refers to a group of dedicated professionals focused on delivering exceptional customer experiences through expertise, creativity, and personalized service'
+    image1: '/thumbnail_large-1.jpg',
+    title: 'MALE INFERTILITY COURSE',
+    description: 'Dr Hamza has vast experience in treating male infertility problems such as erectile dysfunction and premature ejaculation.'
+  },
+
+]
+export const productsInfo = [
+  {
+    id:1,
+    image:'/p1.png',
+
+    title: 'PREGNANCY COURSE',
+    description: 'With a focus on maternal health and fetal well-being, Dr. Hamza provides personalized prenatal care, monitoring the progress of pregnancy and addressing any concerns along the way.'
+  },
+  {
+    id:2,
+    image:'/p2.png',
+    title: 'FEMALE INFERTILITY COURSE',
+    description: "With a compassionate approach and advanced medical techniques, Dr. Hamza provides personalized treatment plans tailored to each patient's unique needs."
+  },  
+  {
+    id:3,
+    image:'/p3.png',
+    title: 'PCOS MANAGEMENT',
+    description: "Dr. Hamza's renowned treatment for Polycystic Ovary Syndrome (PCOS) and irregular periods has transformed the lives of countless women"
+  },
+  {
+    id:4,
+    image:'/p4.png',
+    title: 'WEIGHT LOSS',
+    description: "Dr. Hamza's weight loss treatment plan is a personalized and all-encompassing approach aimed at helping individuals attain their health and wellness objectives."
+  },
+  {
+    id:5,
+    image:'/p5.png',
+
+    title: 'SHADI COURSE',
+    description: "Dr Hamza specializes in treating unmarried males and females who are about to get married. Contact now and discuss your personal matters so you don't have problems after your marriage."
+  },
+  {
+    id:6,
+    image:'/p6.png',
+    title: 'MALE INFERTILITY COURSE',
+    description: 'Dr Hamza has vast experience in treating male infertility problems such as erectile dysfunction and premature ejaculation.'
   },
 
 ]

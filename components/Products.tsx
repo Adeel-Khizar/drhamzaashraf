@@ -1,6 +1,6 @@
 'use client'
 
-import { TrustBadgesInfo } from '@/data'; // Ensure this is typed correctly
+import { productsInfo, TrustBadgesInfo } from '@/data'; // Ensure this is typed correctly
 import { CaladeaF } from '@/fonts';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 // TypeScript - Ensure proper typing of TrustBadgesInfo, assuming it is an array of objects
 
-const TrustBadges = () => {
+const Products = () => {
   // Create a ref array to hold multiple refs (one for each badge)
   const boxRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -46,7 +46,7 @@ const TrustBadges = () => {
   }, []); // Empty dependency array ensures the effect runs only once
 
   return (
-    <div className='py-[50px] bg-white flex flex-col justify-center items-center md:py-[100px] relative'>
+    <div className='py-[50px]  flex flex-col justify-center items-center md:py-[100px] relative'>
       <h2
         style={{
           fontWeight: '900',
@@ -54,46 +54,43 @@ const TrustBadges = () => {
         }}
         className={`${CaladeaF} text-black mx-[5vw] text-4xl text-center md:text-5xl mb-4`}
       >
-        Expert Medical Care
+        Premium Healthcare Products
       </h2>
       <p className={`md:text-xl text-md text-black max-w-[1000px] px-6 text-center mx-[5vw] ${CaladeaF}`}>
-      Receive personalized healthcare services, from preventive care to specialized treatments. Our experienced team is dedicated to your health and well-being.
+      Our products are designed to enhance patient care with precision and reliability, ensuring the highest standards of health.
       </p>
       <div
         className='h-aut mt-6 gap-4 md:gap-6 w-full bg-transparent flex flex-wrap items-end justify-center trust-badges-container'
       >
-        {TrustBadgesInfo.map((item, index: number) => (
+        {productsInfo.map((item, index: number) => (
           <div
             ref={(el) => { boxRefs.current[index] = el; }} // Callback ref with no return
-            className='trust-badge translate-y-[1000px] flex md:mx-0 mx-4 text-center flex-col bg-darkblue rounded-lg items-center justify-center '
+            className='trust-badge translate-y-[1000px]  bg-lightblue flex md:mx-0 mx-4 text-center flex-col  py-8 rounded-lg items-center justify-center '
             key={index}
           >
-            <div>
-          <img className='h-[280px] w-auto services_media'  src={item.image1} height={500} width={500}/>
+            <div className=''>
+          <img className='h-[280px] w-auto '  src={item.image} height={500} width={500}/>
 
             </div>
-            <div className='bg-white p-4 rounded-full  my-6 mx-4'>
-          <img className='h-[40px] w-auto'  src={item.image} height={250} width={250}/>
-
-            </div>
+     
            
             <h3
               style={{
                 fontWeight: '900',
                 lineHeight: '100%',
               }}
-              className={`text-2xl text-white max-w-[320px] ${CaladeaF}`}
+              className={`text-2xl text-white mt-6 max-w-[320px] ${CaladeaF}`}
             >
               {item.title}
             </h3>
-            <p className={`text-sm max-w-[400px] text-white md:text-md ${CaladeaF} mt-6`}>
+            <p className={`text-sm max-w-[400px] text-white px-3 md:text-md ${CaladeaF} mt-6`}>
               {item.description}
             </p>
             <Link
              style={{
               fontWeight: '800'
              }}
-            className={`mt-8 px-12 py-2 mb-8 rounded-md bg-lightblue text-white ${CaladeaF} uppercase `} href='/'>Buy Course Now</Link>
+            className={`mt-8 px-12 py-2 rounded-md bg-darkblue text-white ${CaladeaF} uppercase `} href='/'>Buy  Now</Link>
           </div>
         ))}
       </div>
@@ -101,4 +98,4 @@ const TrustBadges = () => {
   );
 };
 
-export default TrustBadges;
+export default Products;

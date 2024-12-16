@@ -35,13 +35,13 @@ const Header = () => {
 
   return (
     <div
-      className={`header flex md:flex-row md:py-6 flex-col fixed top-0 w-full z-[11111] items-start md:gap-0 gap-10 ${isMenuOpen ? "bgWhite" : ""}  md:items-center justify-between px-[10vw] py-2 ${isScrolled ? "header-scrolled" : ""} md:bg-transparent bg-white`} // Added 'md:bg-transparent bg-white' for mobile
+      className={`header flex border-b-2 border-gray-400 md:flex-row md:py-6 flex-col fixed top-0 w-full z-[11111] items-start md:gap-0 gap-10 ${isMenuOpen ? "bgWhite" : ""}  md:items-center justify-between px-[4vw] py-2 ${isScrolled ? "header-scrolled" : ""} md:bg-transparent bg-white`} // Added 'md:bg-transparent bg-white' for mobile
     >
       {/* Logo */}
       <div>
         <Link href='#home'>
         <img
-          className="h-[100px] w-auto"
+          className="h-[60px] w-auto"
           src="/Screenshot_13 1.png"
           height={500}
           width={500}
@@ -54,7 +54,7 @@ const Header = () => {
       <div className="hidden md:flex md:flex-row md:gap-0 gap-4">
         {MenuLinks.map((item, index) => (
           <Link
-            className={`mx-3 hover:text-gray-800 transition duration-500 ease-in-out hover:scale-125  text-black  ${CaladeaF} text-xl`}
+            className={`mx-3 hover:text-gray-800 transition duration-500 ease-in-out hover:scale-125  text-white  ${CaladeaF} text-xl`}
             key={index}
             href={item.link}
           >
@@ -63,8 +63,8 @@ const Header = () => {
         ))}
       </div>
       <div className="hidden md:block Contact">
-        <Link className="px-8 p-3 text-white font-caladea bg-darkblue rounded-md" href="#contact">
-        Book An Appointment
+        <Link className="px-8 p-3 text-white font-caladea bg-[#05A3F3] rounded-md" href="#contact">
+        Make An Appointment
         </Link>
       </div>
 

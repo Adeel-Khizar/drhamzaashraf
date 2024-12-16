@@ -97,42 +97,44 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="home" className="h-screen flex flex-col w-full bg-lightblue text-black">
-      <div className="h-full overflow-y-hidden items-start heroS bg-lightblue justify-center flex flex-col w-full">
+    <div id="home" className="h-screen flex flex-col w-full  text-black">
+      <div className="h-full overflow-y-hidden items-start heroS  justify-center flex flex-col w-full">
         <Header />
         <div className='flex items-center justify-start'>
         <div ref={boxRef} className="mx-[10vw] w-full  md:w-[50%] translate-x-[-1000px] h-auto">
+
           <h1
-            className={`${CaladeaF} hero-title text-black capitalize text-3xl max-w-[800px] md:text-[3.5vw]`}
+            className={`${CaladeaF} hero-title text-white capitalize text-3xl max-w-[800px] md:text-[3.5vw]`}
             style={{
-              lineHeight: '70%',
+            
               fontWeight: '900',
             }}
           >
-            I'm <span className='text-white'> Dr Hamza Ashraf Zia</span>  <br></br>
-            <span className='text-4xl m-0 p-0'>
+              <span className='text-3xl text-[#FDD750] m-0 pb-4'>
             MBBS Gold Medalist
             </span>
+            
             <br></br>
-            <span className='text-4xl m-0 p-0'>
+            I'm <span className='text-white'> Dr Hamza Ashraf Zia</span>  <br></br>
+            <span className='text-2xl m-0 p-0'>
        King Edward Medical University
             </span>
           </h1>
           <p
-            className={`${CaladeaF} hero-paragraph text-md text-black md:text-2xl mt-4 max-w-[900px]`}
+            className={`${CaladeaF} hero-paragraph text-md text-white md:text-lg mt-4 max-w-[900px]`}
           >
             Welcome to the official website of Dr. Hamza Ashraf Zia - where exceptional healthcare meets personalized care. With a prestigious MBBS degree adorned with gold medals and a strong social media following, I'm here to provide you with the utmost care to your health needs.
           </p>
           <div className="mt-6">
             <Link
-              className={`${CaladeaF} hero-button flex items-center gap-2 font-extrabold px-4 md:px-8 py-3 max-w-fit text-black bg-white rounded-md text-lg md:text-xl`}
+              className={`${CaladeaF} hero-button flex items-center gap-2 font-extrabold px-4 md:px-8 py-3 max-w-fit text-white bg-lightblue rounded-md text-lg md:text-md`}
               href="#services"
             >
-             View All Services
+              All Services
             </Link>
           </div>
         </div>
-        <div className='w-full md:w-[50%] h-[80%] ' >
+        <div className='w-full md:w-[50%] h-[70%] ' >
             <img src='/about 1 (1).png' height={1000} width={1000} alt="Dr.Hamza Ashraf" />
         </div>
         </div>
