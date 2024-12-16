@@ -7,90 +7,153 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 
-// TypeScript - Ensure proper typing of TrustBadgesInfo, assuming it is an array of objects
-
 const Products = () => {
-  // Create a ref array to hold multiple refs (one for each badge)
   const boxRefs = useRef<(HTMLDivElement | null)[]>([]);
 
- 
-
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger); // Register the ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
 
-    // Initial fade-in animation when page loads (animate opacity from 0 to 1)
-  
-
-    // Scroll-triggered fade-in effect for trust badges
+    // Sequential fade-in and slide-up for trust badges with staggered effect
     gsap.fromTo(
-      '.trust-badge', // Target trust badges with class
+      '.trust-badge', 
       {
-        opacity: 0, // Start with opacity 0
-        y: 1000, // Start by moving them down
+        opacity: 0,
+        y: 100, // Start below and fade in
+        scale: 0.8, // Slightly scaled down at the start for smooth animation
       },
       {
-        opacity: 1, // End with full opacity
-        y: 0, // Move to normal position
-        stagger: 0.3, // Stagger the animations for a spaced-out effect
-        ease: 'power5.out', // Smooth easing
-
+        opacity: 1,
+        y: 0,
+        scale: 1, // Scale to normal size
+        stagger: 0.3, // Stagger the animation for a better visual effect
+        ease: 'power4.out', // Smooth easing
         scrollTrigger: {
-          trigger: '.trust-badges-container', // The container element
-          start: 'top 80%', // Start when 80% of the container is in view
-          end: 'top 20%', // End when 20% of the container is visible
-          scrub: 1, // Smooth transition
-          markers: false, // Disable markers
+          trigger: '.trust-badges-container',
+          start: 'top 90%', // Start triggering at 90% of the container (for mobile, slightly delayed)
+          end: 'top 20%',
+          scrub: 1, // Ensure smooth scrubbing
+          markers: false,
         },
       }
     );
-  }, []); // Empty dependency array ensures the effect runs only once
+
+    // Sequential slide-in and fade-in for product cards
+    gsap.fromTo(
+      '.product-card',
+      {
+        opacity: 0,
+        x: -150, // Start off-screen to the left
+        scale: 0.95, // Slightly smaller at the start for a smooth effect
+      },
+      {
+        opacity: 1,
+        x: 0,
+        scale: 1, // Scale to normal size
+        stagger: 0.3, // Stagger the animation for a smoother sequence
+        ease: 'power4.out',
+        scrollTrigger: {
+          trigger: '.product-card',
+          start: 'top 90%', // Trigger the animation when the product card reaches 90% of the viewport
+          end: 'top 30%',
+          scrub: 1,
+          markers: false,
+        },
+      }
+    );
+
+    // Titles fade-in and scale-in sequentially
+    gsap.fromTo(
+      '.product-title',
+      {
+        opacity: 0,
+        scale: 0.85, // Start slightly scaled down
+        y: 20, // Start with a small offset in y direction
+      },
+      {
+        opacity: 1,
+        scale: 1, // Scale to normal size
+        y: 0, // Move into position
+        duration: 1.2,
+        ease: 'power3.out',
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: '.product-title',
+          start: 'top 90%', // Start trigger when 90% of the title enters the viewport
+          end: 'top 20%',
+          scrub: 1,
+          markers: false,
+        },
+      }
+    );
+
+    // Description fade-in and scale-in sequentially
+    gsap.fromTo(
+      '.product-description',
+      {
+        opacity: 0,
+        scale: 0.85,
+        y: 20,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        y: 0,
+        duration: 1.2,
+        ease: 'power3.out',
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: '.product-description',
+          start: 'top 90%', // Start trigger when 90% of the description enters the viewport
+          end: 'top 20%',
+          scrub: 1,
+          markers: false,
+        },
+      }
+    );
+
+  }, []);
 
   return (
-    <div className='py-[50px]  flex flex-col justify-center items-center md:py-[100px] relative'>
+    <div className='py-[50px] px-2 md:px-[8vw] bg-gray-100 flex flex-col justify-center items-center md:py-[100px] relative'>
       <h2
         style={{
           fontWeight: '900',
           lineHeight: '100%',
         }}
-        className={`${CaladeaF} text-black mx-[5vw] text-4xl text-center md:text-5xl mb-4`}
+        className={`${CaladeaF} text-black md:mx-[5vw] text-4xl text-center md:text-5xl mb-4`}
       >
         Premium Healthcare Products
       </h2>
       <p className={`md:text-xl text-md text-black max-w-[1000px] px-6 text-center mx-[5vw] ${CaladeaF}`}>
-      Our products are designed to enhance patient care with precision and reliability, ensuring the highest standards of health.
+        Our products are designed to enhance patient care with precision and reliability, ensuring the highest standards of health.
       </p>
-      <div
-        className='h-aut mt-6 gap-4 md:gap-6 w-full bg-transparent flex flex-wrap items-end justify-center trust-badges-container'
-      >
+      <div className='h-auto mt-6 gap-4 md:gap-6 w-full bg-transparent trust-badges-container'>
         {productsInfo.map((item, index: number) => (
           <div
             ref={(el) => { boxRefs.current[index] = el; }} // Callback ref with no return
-            className='trust-badge translate-y-[1000px]  bg-lightblue flex md:mx-0 mx-4 text-center flex-col  py-8 rounded-lg items-center justify-center '
+            className='trust-badge product-card translate-y-[1000px] bg-lightblue flex md:mx-0 mx-4 text-center flex-col py-8 rounded-lg items-center justify-center '
             key={index}
           >
-            <div className=''>
-          <img className='h-[280px] w-auto '  src={item.image} height={500} width={500}/>
-
+            <div>
+              <img className='h-[280px] w-auto' src={item.image} height={500} width={500} />
             </div>
-     
-           
             <h3
-              style={{
-                fontWeight: '900',
-                lineHeight: '100%',
-              }}
-              className={`text-2xl text-white mt-6 max-w-[320px] ${CaladeaF}`}
+              className={`product-title text-2xl text-white mt-6 max-w-[320px] ${CaladeaF}`}
             >
               {item.title}
             </h3>
-            <p className={`text-sm max-w-[400px] text-white px-3 md:text-md ${CaladeaF} mt-6`}>
+            <p className={`product-description text-sm max-w-[400px] text-white px-3 md:text-md ${CaladeaF} mt-6`}>
               {item.description}
             </p>
             <Link
-             style={{
-              fontWeight: '800'
-             }}
-            className={`mt-8 px-12 py-2 rounded-md bg-darkblue text-white ${CaladeaF} uppercase `} href='/'>Buy  Now</Link>
+              style={{
+                fontWeight: '800',
+              }}
+              className={`mt-8 px-12 py-2 rounded-md bg-darkblue text-white ${CaladeaF} uppercase `}
+              href='/'
+            >
+              Buy Now
+            </Link>
           </div>
         ))}
       </div>
