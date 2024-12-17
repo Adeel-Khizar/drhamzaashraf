@@ -169,7 +169,7 @@ const Hero = () => {
                 MBBS Gold Medalist
               </span>
               <br />
-              I'm <span className='text-white'>Dr. Hamza Ashraf Zia</span>
+              I&apos;m <span className='text-white'>Dr. Hamza Ashraf Zia</span>
               <br />
               <span className='text-xl  md:text-2xl m-0 p-0'>
                 King Edward Medical University
@@ -178,11 +178,11 @@ const Hero = () => {
             <p
               className={`${CaladeaF} md:text-left text-center hero-paragraph text-sm md:text-md text-white md:text-lg mt-4 max-w-[900px]`}
             >
-              Welcome to the official website of Dr. Hamza Ashraf Zia - where exceptional healthcare meets personalized care. With a prestigious MBBS degree adorned with gold medals and a strong social media following, I'm here to provide you with the utmost care to your health needs.
+              Welcome to the official website of Dr. Hamza Ashraf Zia - where exceptional healthcare meets personalized care. With a prestigious MBBS degree adorned with gold medals and a strong social media following, I&apos;m here to provide you with the utmost care to your health needs.
             </p>
             <div className="md:mt-6 my-6 ">
               <Link
-                className={`${CaladeaF} hero-button mx-auto md:m-0 flex items-center gap-2 font-extrabold px-4 md:px-8 py-3 max-w-fit text-white bg-lightblue rounded-md text-lg md:text-md`}
+                className={`${CaladeaF} hero-button mx-auto md:m-0 flex items-center gap-2 font-extrabold px-4 md:px-8 py-3 max-w-fit text-white btn-6  bg-lightblue rounded-md text-lg  md:text-md`}
                 href="#services"
               >
                 All Services

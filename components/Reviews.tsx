@@ -79,12 +79,13 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="h-auto bg-white px-4 md:px-[8vw] py-[40px] md:py-[80px]">
+    <div id="reviews" className="h-auto bg-white px-4 md:px-[8vw] py-[40px] md:py-[80px]">
       <h2
         style={{
           fontWeight: '900',
+
         }}
-        className={` ${CaladeaF} md:text-5xl text-3xl text-center`}
+        className={` ${CaladeaF} text-darkblue md:text-5xl text-3xl text-center`}
       >
         Patient Reviews
       </h2>
@@ -92,7 +93,7 @@ const Reviews = () => {
         style={{
           lineHeight: '110%',
         }}
-        className={`${CaladeaF} mt-3 md:text-lg text-sm text-center`}
+        className={`${CaladeaF} text-darkblue mt-3 md:text-lg text-sm text-center`}
       >
         Discover what our patients are saying about their experiences with us. Read
         honest reviews that highlight the quality of care and personalized service we
@@ -102,7 +103,7 @@ const Reviews = () => {
         {productReviews.map((reviews, key) => (
           <div
             key={key}
-            className="flex bg-darkblue flex-col items-center justify-center text-center gap-6 py-12 px-3 rounded-[20px]"
+            className="flex bg-darkblue  review_item flex-col items-center justify-center text-center gap-6 py-12 px-3 rounded-[20px]"
           >
             <h3
               style={{

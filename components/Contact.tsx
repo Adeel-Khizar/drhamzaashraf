@@ -89,7 +89,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex md:flex-row flex-col bg-lightblue items-center justify-center h-auto py-[40px] md:py-[80px] px-4 md:px-[10vw]">
+    <div id="contact"  className="flex md:flex-row flex-col bg-lightblue items-center justify-center h-auto py-[40px] md:py-[80px] px-4 md:px-[10vw]">
       <div className="flex flex-col w-full md:w-1/2">
         <h2
           style={{
@@ -97,7 +97,7 @@ const Contact = () => {
           }}
           className={`contact-title ${CaladeaF} text-white text-center md:text-left text-4xl mb-5`}
         >
-          We're Here to Help
+          We&apos;re Here to Help
         </h2>
         <p className="contact-description text-center md:text-left ${CaladeaF} text-white pr-4">
           For any questions or appointment requests, feel free to contact us. Our team

@@ -1,156 +1,106 @@
-'use client'
+'use client';
 
-import { productsInfo, TrustBadgesInfo } from '@/data'; // Ensure this is typed correctly
+import { productsInfo } from '@/data'; // Ensure this is typed correctly
 import { CaladeaF } from '@/fonts';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 import Link from 'next/link';
 
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 const Products = () => {
-  const boxRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // Create an array of refs, one for each product
+  const productRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    // Animate each product card's image, title, description, and link
+    productRefs.current.forEach((product) => {
+      if (product) {
+        // Select the elements to animate within each product card
+        const image = product.querySelector('.product-image') as HTMLElement;
+        const title = product.querySelector('.product-title') as HTMLElement;
+        const description = product.querySelector('.product-description') as HTMLElement;
+        const link = product.querySelector('.buy-now') as HTMLElement;
 
-    // Sequential fade-in and slide-up for trust badges with staggered effect
-    gsap.fromTo(
-      '.trust-badge', 
-      {
-        opacity: 0,
-        y: 100, // Start below and fade in
-        scale: 0.8, // Slightly scaled down at the start for smooth animation
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1, // Scale to normal size
-        stagger: 0.3, // Stagger the animation for a better visual effect
-        ease: 'power4.out', // Smooth easing
-        scrollTrigger: {
-          trigger: '.trust-badges-container',
-          start: 'top 90%', // Start triggering at 90% of the container (for mobile, slightly delayed)
-          end: 'top 20%',
-          scrub: 1, // Ensure smooth scrubbing
-          markers: false,
-        },
+        // GSAP animations for each part of the product card
+        gsap.fromTo(
+          [image, title, description, link],
+          {
+            opacity: 0,
+            y: 50,
+            scale: 0.8, // Start scaled down for the zoom effect
+          },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1, // End at the normal size (zoomed in)
+            stagger: 0.2,
+            duration: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: product,
+              start: 'top 80%', // Trigger animation when product comes into view
+              toggleActions: 'play none none none',
+            },
+          }
+        );
       }
-    );
-
-    // Sequential slide-in and fade-in for product cards
-    gsap.fromTo(
-      '.product-card',
-      {
-        opacity: 0,
-        x: -150, // Start off-screen to the left
-        scale: 0.95, // Slightly smaller at the start for a smooth effect
-      },
-      {
-        opacity: 1,
-        x: 0,
-        scale: 1, // Scale to normal size
-        stagger: 0.3, // Stagger the animation for a smoother sequence
-        ease: 'power4.out',
-        scrollTrigger: {
-          trigger: '.product-card',
-          start: 'top 90%', // Trigger the animation when the product card reaches 90% of the viewport
-          end: 'top 30%',
-          scrub: 1,
-          markers: false,
-        },
-      }
-    );
-
-    // Titles fade-in and scale-in sequentially
-    gsap.fromTo(
-      '.product-title',
-      {
-        opacity: 0,
-        scale: 0.85, // Start slightly scaled down
-        y: 20, // Start with a small offset in y direction
-      },
-      {
-        opacity: 1,
-        scale: 1, // Scale to normal size
-        y: 0, // Move into position
-        duration: 1.2,
-        ease: 'power3.out',
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: '.product-title',
-          start: 'top 90%', // Start trigger when 90% of the title enters the viewport
-          end: 'top 20%',
-          scrub: 1,
-          markers: false,
-        },
-      }
-    );
-
-    // Description fade-in and scale-in sequentially
-    gsap.fromTo(
-      '.product-description',
-      {
-        opacity: 0,
-        scale: 0.85,
-        y: 20,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: '.product-description',
-          start: 'top 90%', // Start trigger when 90% of the description enters the viewport
-          end: 'top 20%',
-          scrub: 1,
-          markers: false,
-        },
-      }
-    );
-
+    });
   }, []);
 
   return (
-    <div className='py-[50px] px-2 md:px-[8vw] bg-gray-100 flex flex-col justify-center items-center md:py-[100px] relative'>
+    <div id="products" className="py-[50px] px-2 md:px-[8vw] bg-gray-50 flex flex-col justify-center items-center md:py-[100px] relative">
       <h2
         style={{
           fontWeight: '900',
           lineHeight: '100%',
         }}
-        className={`${CaladeaF} text-black md:mx-[5vw] text-4xl text-center md:text-5xl mb-4`}
+        className={`${CaladeaF} text-darkblue md:mx-[5vw] text-4xl text-center md:text-5xl mb-4`}
       >
         Premium Healthcare Products
       </h2>
-      <p className={`md:text-xl text-md text-black max-w-[1000px] px-6 text-center mx-[5vw] ${CaladeaF}`}>
+      <p className={`md:text-xl text-md text-darkblue max-w-[1000px] px-6 text-center mx-[5vw] ${CaladeaF}`}>
         Our products are designed to enhance patient care with precision and reliability, ensuring the highest standards of health.
       </p>
-      <div className='h-auto mt-6 gap-4 md:gap-6 w-full bg-transparent trust-badges-container'>
-        {productsInfo.map((item, index: number) => (
+      <div className="h-auto mt-6 gap-4 md:gap-6 w-full bg-transparent trust-badges-container">
+        {productsInfo.map((item, index) => (
           <div
-            ref={(el) => { boxRefs.current[index] = el; }} // Callback ref with no return
-            className='trust-badge product-card translate-y-[1000px] bg-lightblue flex md:mx-0 mx-4 text-center flex-col py-8 rounded-lg items-center justify-center '
             key={index}
+            className="product-card product-cards bg-white flex md:mx-0 mx-4 text-center flex-col py-8 rounded-lg items-center justify-center"
+            ref={(el) => { if (el) productRefs.current[index] = el }} // Fixed ref assignment
           >
             <div>
-              <img className='h-[280px] w-auto' src={item.image} height={500} width={500} />
+              <img
+                className="product-image h-[280px] w-auto"
+                src={item.image}
+                height={500}
+                width={500}
+                alt={item.title}
+              />
             </div>
             <h3
-              className={`product-title text-2xl text-white mt-6 max-w-[320px] ${CaladeaF}`}
+              style={{
+                lineHeight: '100%',
+                fontWeight: '900',
+              }}
+              className={`product-title text-2xl text-darkblue mt-6 max-w-[320px] ${CaladeaF}`}
             >
               {item.title}
             </h3>
-            <p className={`product-description text-sm max-w-[400px] text-white px-3 md:text-md ${CaladeaF} mt-6`}>
+            <p className={`product-description text-sm max-w-[400px] text-darkblue px-3 md:text-md ${CaladeaF} mt-6`}>
               {item.description}
             </p>
             <Link
+              target="_blank"
               style={{
-                fontWeight: '800',
+                fontWeight: '900',
               }}
-              className={`mt-8 px-12 py-2 rounded-md bg-darkblue text-white ${CaladeaF} uppercase `}
-              href='/'
+              className={`buy-now transition ease-in-out duration-500 hover:bg-white hover:border-2 border-darkblue hover:text-darkblue mt-8 px-12 py-2 capitalize rounded-md bg-darkblue text-white ${CaladeaF}`}
+              href='https://wa.me/923371112221'
             >
               Buy Now
             </Link>

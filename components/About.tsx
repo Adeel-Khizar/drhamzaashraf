@@ -152,7 +152,7 @@ const About = () => {
   
 
   return (
-    <div className='flex md:flex-row flex-col bg-gray-100 pt-[50px] md:pt-[100px] px-4 md:px-[8vw]'>
+    <div id="about" className='flex md:flex-row flex-col bg-darkblue pt-[50px] md:pt-[100px] px-4 md:px-[8vw]'>
       <div className="about__right w-full md:w-1/2">
         <h3 style={{ fontWeight: '900' }} className={`text-2xl ${CaladeaF} bg-lightblue  md:m-0 m-auto max-w-fit text-white px-8 py-2 rounded-full`}>
           About Us
@@ -160,11 +160,11 @@ const About = () => {
         <h2 style={{
           fontWeight: 900,
           lineHeight: '100%'
-        }} className={` ${CaladeaF} my-6 text-black text-3xl text-center md:text-left md:text-6xl`}>
+        }} className={` ${CaladeaF} my-6 text-white text-3xl text-center md:text-left md:text-6xl`}>
           Your Health, Our Top Priority
         </h2>
-        <p className={`text-lg ${CaladeaF} md:text-left text-center mb-10`}>
-          <span className='text-darkblue'> Dr. Hamza Ashraf Zia </span> began his remarkable journey with outstanding achievements at the Cambridge International Examinations. His academic prowess continued at Government College University and peaked at King Edward Medical University, where he honed his clinical skills and earned prestigious accolades.
+        <p className={`text-lg ${CaladeaF} md:text-left text-center text-white mb-10`}>
+          <span className='text-lightblue'> Dr. Hamza Ashraf Zia </span> began his remarkable journey with outstanding achievements at the Cambridge International Examinations. His academic prowess continued at Government College University and peaked at King Edward Medical University, where he honed his clinical skills and earned prestigious accolades.
         </p>
         <ul className='text-lg about_points flex flex-col gap-3 bg-lightblue text-white py-4 px-2 md:p-[2vw] rounded-md'>
           <li className='flex items-start gap-2'>
@@ -202,7 +202,7 @@ const About = () => {
             lineHeight: '110%',
           }}
           href='/'
-          className={` ${CaladeaF} text-md text-center transition-all duration-500 hover:bg-white hover:border-2 hover:border-lightblue hover:text-black rounded-full bg-lightblue my-5 md:my-10 md:text-xl text-white px-20 py-4 flex items-center justify-center`}>
+          className={` ${CaladeaF} text-md text-center transition-all duration-500 hover:bg-transparent hover:border-2  hover:border-lightblue hover:text-white rounded-full bg-lightblue my-5 md:my-10 md:text-xl text-white px-20 py-4 flex items-center justify-center`}>
           Get Expert Advice from Dr. Hamza
         </Link>
       </div>

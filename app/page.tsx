@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import Reviews from "@/components/Reviews";
@@ -20,11 +19,11 @@ export default function Home() {
   <Contact/>
   <Footer/>
   <div
-      className="cc"
+      className="ccsdfsdf"
       style={{
        
         boxSizing: 'border-box',
-        padding: '20px',
+        padding: '15px',
         borderRadius: '100%',
         cursor: 'pointer',
         position: 'fixed',
@@ -41,13 +40,13 @@ export default function Home() {
             all: 'unset',
             verticalAlign: 'middle',
             display: 'inline-block',
-            height: '54px',
-            width: '54px',
+            height: '35px',
+            width: '35px',
             margin: '0px',
             padding: '0px',
           }}
-          width="54"
-          height="54"
+          width="35"
+          height="35"
           viewBox="0 0 25 25"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

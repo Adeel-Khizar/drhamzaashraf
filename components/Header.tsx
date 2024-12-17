@@ -35,13 +35,13 @@ const Header = () => {
 
   return (
     <div
-      className={`header flex md:border-b-2 border-gray-400 md:flex-row md:py-6 flex-col fixed top-0 w-full z-[11111] items-start md:gap-0 gap-10 ${isMenuOpen ? "bgWhite" : ""}  md:items-center justify-between px-[4vw] py-2 ${isScrolled ? "header-scrolled bg-darkblue" : ""} md:bg-transparent bg-white`} // Added 'md:bg-transparent bg-white' for mobile
+      className={`header flex md:border-b-2 border-lightblue md:flex-row md:py-2 flex-col fixed top-0 w-full z-[11111] items-start md:gap-0 gap-10 ${isMenuOpen ? "bgWhite" : ""}  md:items-center justify-between px-[4vw] py-2 ${isScrolled ? "header-scrolled bg-darkblue" : ""} md:bg-transparent bg-white`} // Added 'md:bg-transparent bg-white' for mobile
     >
       {/* Logo */}
       <div>
         <Link href='#home'>
         <img
-          className=" h-[50px] md:h-[80px] w-auto"
+          className=" h-[50px] md:h-[70px] w-auto"
           src="/image (44).png"
           height={500}
           width={500}
@@ -54,7 +54,7 @@ const Header = () => {
       <div className="hidden md:flex md:flex-row md:gap-0 gap-4">
         {MenuLinks.map((item, index) => (
           <Link
-            className={`mx-3 hover:text-gray-800 transition duration-500 ease-in-out hover:scale-125  text-white  ${CaladeaF} text-xl`}
+            className={`mx-3 hover:font-bold transition duration-500 ease-in-out hover:scale-125  text-white  ${CaladeaF} text-xl`}
             key={index}
             href={item.link}
           >
@@ -63,7 +63,7 @@ const Header = () => {
         ))}
       </div>
       <div className="hidden md:block Contact">
-        <Link className="px-8 p-3 text-white font-caladea bg-[#05A3F3] rounded-md" href="https://wa.me/923371112221">
+        <Link target="_blank" className="px-8 p-3 text-white font-caladea btn-5 bg-[#05A3F3] rounded-md" href="https://wa.me/923371112221">
         Make An Appointment
         </Link>
       </div>
@@ -115,7 +115,7 @@ const Header = () => {
           <div className="flex flex-col gap-6">
             {MenuLinks.map((item, index) => (
               <Link
-                className={`mx-3 hover:text-gray-200 hover:font-extrabold text-white uppercase ${CaladeaF} text-md`}
+                className={`mx-3  hover:font-extrabold text-white uppercase ${CaladeaF} text-md`}
                 key={index}
                 href={item.link}
               >

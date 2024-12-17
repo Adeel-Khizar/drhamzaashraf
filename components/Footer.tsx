@@ -1,4 +1,4 @@
-import { MenuLinks, ServicesInfo, TrustBadgesInfo } from '@/data'
+import { MenuLinks, TrustBadgesInfo } from '@/data'
 import { CaladeaF } from '@/fonts'
 import Link from 'next/link'
 import React from 'react'
@@ -21,7 +21,7 @@ const Footer = () => {
   	 			<h4 className={` ${CaladeaF}`}>Quick Links</h4>
   	 			<ul className={` ${CaladeaF}`}>
             {MenuLinks.map((link, key) => (
-  	 				<li><a className={`tex-white ${CaladeaF}`} key={key} href={link.link}>{link.label}</a></li>
+  	 				<li key={key}><a className={`tex-white ${CaladeaF}`}  href={link.link}>{link.label}</a></li>
 
             ))}
   	 		
@@ -38,6 +38,17 @@ const Footer = () => {
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4 className={` ${CaladeaF}`}>follow us</h4>
+           <p
+            style={{
+              lineHeight:'180%'
+            }}
+           className='text-white text-md pb-4'>
+          Zia Hospital and Maternity Complex Main Ferozpur Road, Lahore
+            <br ></br>
+ h.zia96@gmail.com
+  <br></br>
+ 03371112221
+          </p>
   	 			<div className="social-links">
   	 				<a target='_blank' href="https://www.tiktok.com/@doctorhamzaashraf?_t=8mkBEaepvRo&_r=1 "> <svg
         fill="#000000"
@@ -81,13 +92,14 @@ const Footer = () => {
     </g>
 </svg></a>
   	 			</div>
+       
   	 		</div>
   	 	</div>
   	 </div>
     <div style={{
       lineHeight: '100%'
     }} className="footer_bottom px-4 py-2 md:py-8 text-center text-white ">
-      <p>Copyright © 2024 Node Agency. All rights reserved.</p>
+      <p className='text-sm'>Copyright © 2024 Node Agency. All rights reserved.</p>
     </div>
   </footer>
 

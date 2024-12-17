@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html,
+body{
+  scroll-behavior: smooth;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -182,4 +185,113 @@ ul{
 .social-links {
   display: flex;
 
+}
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+ 
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+.btn-5,
+.btn-5::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-5 {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+ border-radius: 5px;
+  position: relative;
+}
+
+.btn-5::before,
+.btn-5::after {
+  background: #05A3F3;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-5:hover {
+  color: white;
+}
+.btn-6 {
+  overflow: hidden;
+}
+
+.btn-6::after {
+ 
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-6:hover:after {
+  height: 100%;
+  width: 135%;
+}
+.btn-6,
+.btn-6::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-6 {
+  background: white;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: black;
+  display: block;
+ border-radius: 5px;
+  position: relative;
+}
+
+.btn-6::before,
+.btn-6::after {
+  background: #174EA4;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-6:hover {
+  color: white;
+}
+
+.social-links a:hover{
+   background-color: #05A3F3 !important;
+   border: 0px solid white !important;
+}
+.social-links a:hover svg{
+  fill: white;
+}
+.product-cards,
+.trust-badge,
+.review_item {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

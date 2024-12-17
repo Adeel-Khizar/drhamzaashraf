@@ -84,70 +84,43 @@ export const productsInfo = [
     id:1,
     image:'/p1.png',
 
-    title: 'PREGNANCY COURSE',
-    description: 'With a focus on maternal health and fetal well-being, Dr. Hamza provides personalized prenatal care, monitoring the progress of pregnancy and addressing any concerns along the way.'
+    title: 'Medicated Sun Block',
+    description: 'This medicated sunblock is chemical free and recommended for all people by Dr Hamza for a fresh glowing skin. It is effective for both males and females.'
   },
   {
     id:2,
     image:'/p2.png',
-    title: 'FEMALE INFERTILITY COURSE',
-    description: "With a compassionate approach and advanced medical techniques, Dr. Hamza provides personalized treatment plans tailored to each patient's unique needs."
+    title: 'Natural Silajit Supplement',
+    description: "Are you facing issues in your sexual life and want to boost your energy stamina and performance? This Silajit is 100% pure and without any side effects."
   },  
   {
     id:3,
     image:'/p3.png',
-    title: 'PCOS MANAGEMENT',
-    description: "Dr. Hamza's renowned treatment for Polycystic Ovary Syndrome (PCOS) and irregular periods has transformed the lives of countless women"
+    title: 'Weight Loss Supplement',
+    description: "Do you feel ashamed of being overweight and want a slim figure? Order this weight loss supplement by Dr Hamza and lose upto 5 kg weight per month."
   },
   {
     id:4,
     image:'/p4.png',
-    title: 'WEIGHT LOSS',
-    description: "Dr. Hamza's weight loss treatment plan is a personalized and all-encompassing approach aimed at helping individuals attain their health and wellness objectives."
+    title: 'Female Vaginal Wash',
+    description: "Females with Leukorrhea and smelly discharge can use this medicated lotion. It is the choice of Doctor Hamza for his patients."
   },
   {
     id:5,
     image:'/p5.png',
 
-    title: 'SHADI COURSE',
-    description: "Dr Hamza specializes in treating unmarried males and females who are about to get married. Contact now and discuss your personal matters so you don't have problems after your marriage."
+    title: 'Erectile Dysfunction Gel',
+    description: "Patients suffering from Erectile Dysfunction and Premature Ejaculation can use this imported gel recommended by Dr Hamza and make their sexual life better."
   },
   {
     id:6,
     image:'/p6.png',
-    title: 'MALE INFERTILITY COURSE',
-    description: 'Dr Hamza has vast experience in treating male infertility problems such as erectile dysfunction and premature ejaculation.'
+    title: 'Male Semen Booster',
+    description: 'Are you facing problems in Sperm Count , Motility and Morphology? DONT WORRY! Sperm Booster Sachet is here to solve all your problems.'
   },
 
 ]
-export const ServicesInfo = [
- 
-  {
-    id:1,
-    image:'/img-1.jpg',
-    title: 'Targeted Outbound Call Campaigns',
-    description: "Our outbound call services help businesses proactively engage with their customers, prospects, and leads. From sales calls to customer follow-ups, market research surveys, and appointment scheduling, we manage all aspects of outbound communication with precision. Our agents are trained to build rapport, drive sales conversions, collect feedback, and maintain positive customer relationships. Whether you're looking to expand your client base or follow up on existing inquiries, our outbound call services are an efficient way to reach your audience and achieve your business goals.",
-    backgroundColor:'#fff',
-    TextColor:'#000'
-  },
-  {
-    id:2,
-    image:'/img.jpg',
-    title: 'Professional Inbound Call Campaign',
-    description: "Our inbound call services are designed to handle all customer inquiries, support requests, and general communication needs. Whether it's for order assistance, product inquiries, or technical support, our trained agents provide prompt and professional service. With an emphasis on customer satisfaction, we ensure that every call is answered efficiently, with personalized attention, and resolved to the customer’s complete satisfaction. Our inbound call services are available 24/7 to ensure that your customers always receive the support they need, when they need it.",
-    backgroundColor:'#FFD262',
-    TextColor:'#000'
-  },
-  {
-    id:3,
-    image:'/img-2.jpg',
-    title: 'Expert Customer Support for Every Need',
-    description: "Our customer support services are designed to provide your customers with fast, friendly, and effective solutions to their problems. We handle everything from technical troubleshooting to order inquiries and product support, ensuring your customers' concerns are addressed quickly and professionally. Our agents are equipped with the tools and training to manage all customer touchpoints—phone, email, chat, or social media—so you can rest assured that your customers receive consistent, high-quality support across all channels. Let us handle your customer support, so you can focus on growing your business.",
-    backgroundColor:'#fff',
-    TextColor:'#000'
-  },
 
-]
 export const productReviews = [
  
   {
