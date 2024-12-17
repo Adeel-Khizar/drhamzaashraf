@@ -10,46 +10,82 @@ import Link from 'next/link';
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 const Products = () => {
-  // Create an array of refs, one for each product
   const productRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    // Animate each product card's image, title, description, and link
-    productRefs.current.forEach((product) => {
-      if (product) {
-        // Select the elements to animate within each product card
-        const image = product.querySelector('.product-image') as HTMLElement;
-        const title = product.querySelector('.product-title') as HTMLElement;
-        const description = product.querySelector('.product-description') as HTMLElement;
-        const link = product.querySelector('.buy-now') as HTMLElement;
+    // Use GSAP matchMedia for mobile responsiveness
+    gsap.matchMedia({
+      "(min-width: 768px)": function () {
+        productRefs.current.forEach((product) => {
+          if (product) {
+            const image = product.querySelector('.product-image') as HTMLElement;
+            const title = product.querySelector('.product-title') as HTMLElement;
+            const description = product.querySelector('.product-description') as HTMLElement;
+            const link = product.querySelector('.buy-now') as HTMLElement;
 
-        // GSAP animations for each part of the product card
-        gsap.fromTo(
-          [image, title, description, link],
-          {
-            opacity: 0,
-            y: 50,
-            scale: 0.8, // Start scaled down for the zoom effect
-          },
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1, // End at the normal size (zoomed in)
-            stagger: 0.2,
-            duration: 1,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: product,
-              start: 'top 80%', // Trigger animation when product comes into view
-              toggleActions: 'play none none none',
-            },
+            gsap.fromTo(
+              [image, title, description, link],
+              {
+                opacity: 0,
+                y: 50,
+                scale: 0.8,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                stagger: 0.2,
+                duration: 1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                  trigger: product,
+                  start: 'top 80%',
+                  toggleActions: 'play none none none',
+                },
+              }
+            );
           }
-        );
-      }
+        });
+      },
+      "(max-width: 767px)": function () {
+        productRefs.current.forEach((product) => {
+          if (product) {
+            const image = product.querySelector('.product-image') as HTMLElement;
+            const title = product.querySelector('.product-title') as HTMLElement;
+            const description = product.querySelector('.product-description') as HTMLElement;
+            const link = product.querySelector('.buy-now') as HTMLElement;
+
+            gsap.fromTo(
+              [image, title, description, link],
+              {
+                opacity: 0,
+                y: 50,
+                scale: 0.8,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                stagger: 0.2,
+                duration: 1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                  trigger: product,
+                  start: 'top 90%',
+                  toggleActions: 'play none none none',
+                },
+              }
+            );
+          }
+        });
+      },
     });
+
+    // Optional: Refresh ScrollTrigger for mobile
+    if (window.innerWidth <= 768) {
+      ScrollTrigger.refresh();
+    }
   }, []);
 
   return (
@@ -71,7 +107,7 @@ const Products = () => {
           <div
             key={index}
             className="product-card product-cards bg-white flex md:mx-0 mx-4 text-center flex-col py-8 rounded-lg items-center justify-center"
-            ref={(el) => { if (el) productRefs.current[index] = el }} // Fixed ref assignment
+            ref={(el) => { if (el) productRefs.current[index] = el }}
           >
             <div>
               <img
@@ -100,7 +136,7 @@ const Products = () => {
                 fontWeight: '900',
               }}
               className={`buy-now transition ease-in-out duration-500 hover:bg-white hover:border-2 border-darkblue hover:text-darkblue mt-8 px-12 py-2 capitalize rounded-md bg-darkblue text-white ${CaladeaF}`}
-              href='https://wa.me/923371112221'
+              href="https://wa.me/923371112221"
             >
               Buy Now
             </Link>
