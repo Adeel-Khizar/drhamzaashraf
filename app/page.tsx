@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import Reviews from "@/components/Reviews";
@@ -16,6 +17,7 @@ export default function Home() {
   <Services/>
   <About/>
   <Reviews/>
+  <Gallery/>
   <Contact/>
   <Footer/>
   <div

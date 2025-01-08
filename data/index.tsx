@@ -270,3 +270,29 @@ export const faqs = [
 }
 ]
 
+export const GalleryInfo = [
+  {
+    id:1,
+    url:'/11.jpeg'
+  },
+  {
+    id:2,
+    url:'/222.jpeg'
+  },
+  {
+    id:3,
+    url:'/333.jpeg'
+  },
+  {
+    id:4,
+    url:'/4444.jpeg'
+  },
+  {
+    id:5,
+    url:'/55555.jpeg'
+  },
+  {
+    id:6,
+    url:'/666666.jpeg'
+  }
+]

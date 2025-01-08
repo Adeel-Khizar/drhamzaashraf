@@ -45,7 +45,7 @@ const Footer = () => {
            className='text-white text-md pb-4'>
           Zia Hospital and Maternity Complex Main Ferozpur Road, Lahore
             <br ></br>
- h.zia96@gmail.com
+            drhamzaashrafzia@gmail.com
   <br></br>
  03371112221
           </p>
