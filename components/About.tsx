@@ -201,7 +201,7 @@ const About = () => {
             fontWeight: '900',
             lineHeight: '110%',
           }}
-          href='/'
+          href='https://calendly.com/dr-hamza-ashraf-official'
           className={` ${CaladeaF} text-md text-center transition-all duration-500 hover:bg-transparent hover:border-2  hover:border-lightblue hover:text-white rounded-full bg-lightblue my-5 md:my-10 md:text-xl text-white px-20 py-4 flex items-center justify-center`}>
           Get Expert Advice from Dr. Hamza
         </Link>
