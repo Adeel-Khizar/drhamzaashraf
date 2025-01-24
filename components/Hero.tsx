@@ -183,9 +183,9 @@ const Hero = () => {
             <div className="md:mt-6 my-6 ">
               <Link
                 className={`${CaladeaF} hero-button mx-auto md:m-0 flex items-center gap-2 font-extrabold px-4 md:px-8 py-3 max-w-fit text-white btn-6  bg-lightblue rounded-md text-lg  md:text-md`}
-                href="#services"
+                href="https://wa.me/923371112221"
               >
-                All Services
+                Book Appointment Now
               </Link>
             </div>
           </div>
@@ -193,7 +193,7 @@ const Hero = () => {
             <img
                className=' '
               ref={imageRef}
-              src='/about 1 (1).png'
+              src='/image.png'
               height={1000}
               width={1000}
               alt="Dr. Hamza Ashraf"

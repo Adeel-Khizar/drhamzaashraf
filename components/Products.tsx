@@ -105,10 +105,19 @@ const Products = () => {
       <div className="h-auto mt-6 gap-4 md:gap-6 w-full bg-transparent trust-badges-container">
         {productsInfo.map((item, index) => (
           <div
+          style={{
+            position: 'relative'
+          }}
             key={index}
             className="product-card product-cards bg-white flex md:mx-0 mx-4 text-center flex-col py-8 rounded-lg items-center justify-center"
             ref={(el) => { if (el) productRefs.current[index] = el }}
           >
+            <span className='bg-[#FDD750] text-md text-black font-bold px-4 py-1 text-center rounded-md' style={{
+              position: 'absolute',
+              top: '10px',
+              left:'10px',
+              
+            }}>Best Seller</span>
             <div>
               <img
                 className="product-image h-[280px] w-auto"
@@ -135,10 +144,10 @@ const Products = () => {
               style={{
                 fontWeight: '900',
               }}
-              className={`buy-now transition ease-in-out duration-500 hover:bg-white hover:border-2 border-darkblue hover:text-darkblue mt-8 px-12 py-2 capitalize rounded-md bg-darkblue text-white ${CaladeaF}`}
+              className={`buy-now transition flex gap-2 items-center justify-center ease-in-out duration-500 hover:bg-darkblue hover:bg-opacity-80 hover:border-2 border-darkblue mt-8 px-12 py-2 capitalize rounded-md bg-darkblue text-white ${CaladeaF}`}
               href="https://wa.me/923371112221"
             >
-              Buy Now
+              Buy Now <span className='text-[#FDD750] text-sm' >-{item.off} OFF</span>
             </Link>
           </div>
         ))}

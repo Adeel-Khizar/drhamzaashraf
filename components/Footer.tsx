@@ -99,7 +99,7 @@ const Footer = () => {
     <div style={{
       lineHeight: '100%'
     }} className="footer_bottom px-4 py-2 md:py-8 text-center text-white ">
-      <p className='text-sm'>Copyright © 2024 Node Agency. All rights reserved.</p>
+      <p className='text-sm'>Copyright © 2025 Node Agency. All rights reserved.</p>
     </div>
   </footer>
 

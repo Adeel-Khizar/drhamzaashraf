@@ -80,45 +80,49 @@ export const TrustBadgesInfo = [
 
 ]
 export const productsInfo = [
+  
   {
     id:1,
-    image:'/p1.png',
-
-    title: 'Medicated Sun Block',
-    description: 'This medicated sunblock is chemical free and recommended for all people by Dr Hamza for a fresh glowing skin. It is effective for both males and females.'
-  },
-  {
-    id:2,
     image:'/p2.png',
     title: 'Natural Silajit Supplement',
+    off: '44%',
     description: "Are you facing issues in your sexual life and want to boost your energy stamina and performance? This Silajit is 100% pure and without any side effects."
   },  
   {
-    id:3,
+    id:2,
     image:'/p3.png',
+    off: '50%',
     title: 'Weight Loss Supplement',
     description: "Do you feel ashamed of being overweight and want a slim figure? Order this weight loss supplement by Dr Hamza and lose upto 5 kg weight per month."
   },
   {
-    id:4,
+    id:3,
     image:'/p4.png',
     title: 'Female Vaginal Wash',
+    off: '35%',
     description: "Females with Leukorrhea and smelly discharge can use this medicated lotion. It is the choice of Doctor Hamza for his patients."
   },
   {
-    id:5,
+    id:4,
     image:'/p5.png',
-
+    off: '55%',
     title: 'Erectile Dysfunction Gel',
     description: "Patients suffering from Erectile Dysfunction and Premature Ejaculation can use this imported gel recommended by Dr Hamza and make their sexual life better."
   },
   {
-    id:6,
+    id:5,
     image:'/p6.png',
     title: 'Male Semen Booster',
+    off: '50%',
     description: 'Are you facing problems in Sperm Count , Motility and Morphology? DONT WORRY! Sperm Booster Sachet is here to solve all your problems.'
   },
-
+  {
+    id:6,
+    image:'/p1.png',
+    off: '45%',
+    title: 'Medicated Sun Block',
+    description: 'This medicated sunblock is chemical free and recommended for all people by Dr Hamza for a fresh glowing skin. It is effective for both males and females.'
+  },
 ]
 
 export const productReviews = [
@@ -162,6 +166,55 @@ export const productReviews = [
     video:'/test5.mp4',
     title: 'PCOS Treatment',
     description: "I was having irregular periods, weight gain and hirsutism. I used PCOS course by Dr Hamza and all my problems were solved. Now i dont have PCOS.",
+  
+  },
+  {
+    id:7,
+    video:'/7.mp4',
+    title: '',
+    description: "",
+  
+  },
+  {
+    id:8,
+    video:'/8.mp4',
+    title: '',
+    description: "",
+  
+  },
+  {
+    id:9,
+    video:'/9.mp4',
+    title: '',
+    description: "",
+  
+  },
+  {
+    id:10,
+    video:'/10.mp4',
+    title: '',
+    description: "",
+  
+  },
+  {
+    id:11,
+    video:'/11.mp4',
+    title: '',
+    description: "",
+  
+  },
+  {
+    id:12,
+    video:'/12.mp4',
+    title: '',
+    description: "",
+  
+  },
+  {
+    id:13,
+    video:'/12.mp4',
+    title: '',
+    description: "",
   
   },
 
@@ -212,7 +265,7 @@ export const socialMediaData = [
       </g>
   </svg>
     ),
-    description: "Click on the Instagram icon to go to my page",
+    description: "Click on the Messanger icon to go to my page",
     link:'https://www.facebook.com/drhamzaashrafzia?mibextid=ZbWKwL'
   },
   {
@@ -237,7 +290,7 @@ export const socialMediaData = [
       </g>
   </svg>
     ),
-    description: "Click on the LinkedIn icon to go to my page",
+    description: "Click on the Whatsapp icon to go to my page",
     link:'https://wa.me/923371112221'
   },
 ];
