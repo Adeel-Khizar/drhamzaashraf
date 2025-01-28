@@ -299,3 +299,31 @@ ul{
 .social-links a:hover ~ svg path{
   fill: white !important;
 }
+.bestseller {
+
+  animation: bestseller-glow 1.5s infinite alternate;
+}
+
+/* Hover state to pause animation */
+.bestseller:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bestseller-glow {
+  0% {
+    transform: scale(1);
+    background-position: 0% 50%;
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    background-position: 100% 50%;
+    opacity: 1;
+    box-shadow: 0 3px 12px rgba(255,0,0,0.4);
+  }
+  100% {
+    transform: scale(1);
+    background-position: 0% 50%;
+    opacity: 0.9;
+  }
+}

@@ -113,7 +113,7 @@ const Products = () => {
     ref={(el) => { if (el) productRefs.current[index] = el }}
   >
     {(item.title === "Natural Silajit Supplement" || item.title === "Erectile Dysfunction Gel") && (
-      <span className='bg-[#FDD750] text-md text-black font-bold px-4 py-1 text-center rounded-md' style={{
+      <span className='bg-[#FDD750] bestseller text-md text-black font-bold px-4 py-1 text-center rounded-md' style={{
         position: 'absolute',
         top: '10px',
         left: '10px',
