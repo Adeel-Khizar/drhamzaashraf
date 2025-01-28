@@ -193,7 +193,7 @@ const Hero = () => {
             <img
                className=' '
               ref={imageRef}
-              src='/image.png'
+              src='/image (3) (4).png'
               height={1000}
               width={1000}
               alt="Dr. Hamza Ashraf"
