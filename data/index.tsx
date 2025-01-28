@@ -36,7 +36,7 @@ export const TrustBadgesInfo = [
   {
     id:1,
     image:'/heart-angle-svgrepo-com 1.png',
-    image1:'/tl (1).jpg',
+    image1:'/Pregrancy Course.jpeg',
 
     title: 'PREGNANCY COURSE',
     description: 'With a focus on maternal health and fetal well-being, Dr. Hamza provides personalized prenatal care, monitoring the progress of pregnancy and addressing any concerns along the way.'
@@ -44,28 +44,28 @@ export const TrustBadgesInfo = [
   {
     id:2,
     image:'/heart-pulse-2-svgrepo-com 1 (1).png',
-    image1:'/tl (2).jpg',
+    image1:'/Female Infertility.jpeg',
     title: 'FEMALE INFERTILITY COURSE',
     description: "With a compassionate approach and advanced medical techniques, Dr. Hamza provides personalized treatment plans tailored to each patient's unique needs."
   },  
   {
     id:3,
     image:'/medicine-capsule-svgrepo-com 1 (1).png',
-    image1: "/tl (3) 1 (1).png",
+    image1: "/pcos management.jpeg",
     title: 'PCOS MANAGEMENT',
     description: "Dr. Hamza's renowned treatment for Polycystic Ovary Syndrome (PCOS) and irregular periods has transformed the lives of countless women"
   },
   {
     id:4,
     image:'/weight-svgrepo-com 1 (1).png',
-    image1: "/tl (4).jpg",
+    image1: "/weight loss management.jpeg",
     title: 'WEIGHT LOSS',
     description: "Dr. Hamza's weight loss treatment plan is a personalized and all-encompassing approach aimed at helping individuals attain their health and wellness objectives."
   },
   {
     id:5,
     image:'/hearts-fill-svgrepo-com 1 (1).png',
-    image1: "/tl (5).jpg",
+    image1: "/shadi course.jpeg",
 
     title: 'SHADI COURSE',
     description: "Dr Hamza specializes in treating unmarried males and females who are about to get married. Contact now and discuss your personal matters so you don't have problems after your marriage."
@@ -73,7 +73,7 @@ export const TrustBadgesInfo = [
   {
     id:6,
     image:'/doctor-male-svgrepo-com 1 (1).png',
-    image1: '/thumbnail_large-1.jpg',
+    image1: '/male infertility.jpeg',
     title: 'MALE INFERTILITY COURSE',
     description: 'Dr Hamza has vast experience in treating male infertility problems such as erectile dysfunction and premature ejaculation.'
   },
@@ -171,50 +171,57 @@ export const productReviews = [
   {
     id:7,
     video:'/7.mp4',
-    title: '',
-    description: "",
+    title: 'Poor Semen Report',
+    description: "I had poor semen report and I had wasted alot of money but got no benefit until I found Dr Hamza who gave me the best medicine.",
   
   },
   {
     id:8,
     video:'/8.mp4',
-    title: '',
-    description: "",
+    title: 'Painless Spinal Anesthesia ',
+    description: "Dr Hamza is indeed the best doctor for Spinal Anesthesia. My C Section was absolutely painless.",
   
   },
   {
     id:9,
     video:'/9.mp4',
-    title: '',
-    description: "",
+    title: 'Stamina Problem',
+    description: "I came from Saudia Arabia for my sexual weakness treatment. Dr Hamza was kind enough to solve all my issues.",
   
   },
   {
     id:10,
     video:'/10.mp4',
-    title: '',
-    description: "",
+    title: 'Pregnancy Treatment',
+    description: "I was facing Infertility for 4 years. Then I used Dr Hamza Medicine and my UPT is Positive",
   
   },
   {
     id:11,
     video:'/11.mp4',
-    title: '',
-    description: "",
+    title: 'Sexual Weakness',
+    description: "I came from UK especially for the treatment of my Infertility. Dr Hamza gave me the best supplements and diet plan",
   
   },
   {
     id:12,
     video:'/12.mp4',
-    title: '',
-    description: "",
+    title: 'Premature Ejaculation',
+    description: "I was facing alot of problems in my sexual life. I had a great session with Dr Hamza who solved all my issues.",
   
   },
   {
     id:13,
-    video:'/12.mp4',
-    title: '',
-    description: "",
+    video:'/erectile.mp4',
+    title: 'Erectile Dysfunction',
+    description: "I took medicine from Dr Hamza for my husband who was suffering from Erectile Dysfunction. Now he is perfectly fine",
+  
+  },
+  {
+    id:14,
+    video:'/Pregnancy.mp4',
+    title: 'Preciously Pregnancy',
+    description: "Alhamdulillah I've conceived after 9 years after using Dr Hamza Medicine. He is an angel for his patients",
   
   },
 
@@ -250,7 +257,7 @@ export const socialMediaData = [
   },
   {
     id: 3,
-    name: "Messanger",
+    name: "Facebook",
     icon: (
       <svg width="30px" height="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" >
     
@@ -265,7 +272,7 @@ export const socialMediaData = [
       </g>
   </svg>
     ),
-    description: "Click on the Messanger icon to go to my page",
+    description: "Click on the Facebook icon to go to my page",
     link:'https://www.facebook.com/drhamzaashrafzia?mibextid=ZbWKwL'
   },
   {
@@ -326,26 +333,19 @@ export const faqs = [
 export const GalleryInfo = [
   {
     id:1,
-    url:'/11.jpeg'
+    url:'/chat1.jpeg'
   },
   {
     id:2,
-    url:'/222.jpeg'
+    url:'/chat2.jpeg'
   },
   {
     id:3,
-    url:'/333.jpeg'
+    url:'/chat3.jpeg'
   },
   {
     id:4,
-    url:'/4444.jpeg'
+    url:'/chat4.jpeg'
   },
-  {
-    id:5,
-    url:'/55555.jpeg'
-  },
-  {
-    id:6,
-    url:'/666666.jpeg'
-  }
+ 
 ]

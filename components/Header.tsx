@@ -64,7 +64,7 @@ const Header = () => {
       </div>
       <div className="hidden md:block Contact">
         <Link target="_blank" className="px-8 p-3 text-white font-caladea btn-5 bg-[#05A3F3] rounded-md" 
-              href="https://calendly.com/dr-hamza-ashraf-official"
+               href="https://wa.me/923371112221"
         
         >
         Make An Appointment
@@ -130,8 +130,9 @@ const Header = () => {
           {/* Mobile Contact Button */}
           <div className="Contact pt-6 pb-10">
             <Link
+           
               className="px-8 p-3 text-white bg-lightblue rounded-md"
-              href="https://calendly.com/dr-hamza-ashraf-official"
+               href="https://wa.me/923371112221"
             >
               Book An Appointment
             </Link>

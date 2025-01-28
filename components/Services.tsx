@@ -96,8 +96,8 @@ const Products = () => {
             className='trust-badge bg-darkblue pb-6 flex md:mx-0 mx-4 text-center flex-col  rounded-lg items-center justify-start'
             key={key}
           >
-            <div>
-              <img className='h-auto services_media w-full' src={item.image1} height={500} width={500} />
+            <div className='w-full'>
+              <img className='md:h-[400px] h-[300px] object-cover services_media w-full' src={item.image1} height={500} width={500} />
             </div>
             <div className='services_icon p-3 mt-4 bg-white rounded-full'>
               <img className='h-auto w-[40px] services_media object-contain' src={item.image} height={250} width={250} />
