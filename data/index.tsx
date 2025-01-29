@@ -220,7 +220,7 @@ export const productReviews = [
   {
     id:14,
     video:'/Pregnancy.mp4',
-    title: 'Preciously Pregnancy',
+    title: 'Precious Pregnancy',
     description: "Alhamdulillah I've conceived after 9 years after using Dr Hamza Medicine. He is an angel for his patients",
   
   },
