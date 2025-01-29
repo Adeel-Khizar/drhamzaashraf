@@ -97,10 +97,14 @@ const Products = () => {
             key={key}
           >
             <div className='w-full'>
-              <img className='md:h-[400px] h-auto object-top-center object-cover services_media w-full' src={item.image1} height={500} width={500} />
+              <img
+               style={{
+                objectPosition:'top center'
+               }}
+              className='md:h-[400px] h-auto object-top-center object-cover services_media w-full' src={item.image1} height={500} width={500} />
             </div>
             <div className='services_icon p-3 mt-4 bg-white rounded-full'>
-              <img className='h-auto w-[40px] services_media object-contain' src={item.image} height={250} width={250} />
+              <img  className='h-auto w-[40px] services_media object-contain' src={item.image} height={250} width={250} />
             </div>
             <h3
               style={{
