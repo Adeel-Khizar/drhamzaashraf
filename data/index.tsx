@@ -118,7 +118,7 @@ export const productsInfo = [
   },
   {
     id:6,
-    image:'/femalepos.jpeg',
+    image:'/femalepos 1 (1).png',
     off: '45%',
     title: 'Female PCOS Supplement',
     description: 'The supplement is for females suffering from hirsutism , hormonal imbalance and irregular periods. It will boost your fertility.'
