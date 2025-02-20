@@ -118,10 +118,10 @@ export const productsInfo = [
   },
   {
     id:6,
-    image:'/p1.png',
+    image:'/femalepos.jpeg',
     off: '45%',
-    title: 'Medicated Sun Block',
-    description: 'This medicated sunblock is chemical free and recommended for all people by Dr Hamza for a fresh glowing skin. It is effective for both males and females.'
+    title: 'Female PCOS Supplement',
+    description: 'The supplement is for females suffering from hirsutism , hormonal imbalance and irregular periods. It will boost your fertility.'
   },
 ]
 
