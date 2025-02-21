@@ -164,7 +164,11 @@ const About = () => {
           Your Health, Our Top Priority
         </h2>
         <p className={`text-lg ${CaladeaF} md:text-left text-center text-white mb-10`}>
-          <span className='text-lightblue'> Dr. Hamza Ashraf Zia </span> began his remarkable journey with outstanding achievements at the Cambridge International Examinations. His academic prowess continued at Government College University and peaked at King Edward Medical University, where he honed his clinical skills and earned prestigious accolades.
+          <span className='text-lightblue'> Dr. Hamza Ashraf Zia </span> is a distinguished medical professional with an exceptional academic record. He earned his MBBS from King Edward Medical University (KEMU), where he was honored as a Gold Medalist. His excellence in Gynaecology & Obstetrics earned him the title of Position Holder, and he achieved distinctions in Medicine, ENT, and Paediatrics. 
+          <br/>
+          <br/>
+
+          Dr. Hamza is a registered medical practitioner with NLE, RMP, and PMDC certifications. His academic journey began with O Levels from Cambridge University, UK, followed by FSc from Government College University, Lahore. Recognized for his outstanding achievements, he was awarded the Best Graduate title at BSS.
         </p>
         <ul className='text-lg about_points flex flex-col gap-3 bg-lightblue text-white py-4 px-2 md:p-[2vw] rounded-md'>
           <li className='flex items-start gap-2'>
