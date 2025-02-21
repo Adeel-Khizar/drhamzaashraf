@@ -123,7 +123,7 @@ const Products = () => {
                 fontWeight: '800',
               }}
               className={`mt-8 px-12 py-2 hover:bg-transparent hover:border-2 border-white transition ease-out duration-700 rounded-md bg-lightblue text-white ${CaladeaF} uppercase`}
-              href='/'
+              href='https://wa.me/923371112221'
             >
               Buy Now
             </Link>
