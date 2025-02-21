@@ -146,7 +146,7 @@ const Products = () => {
         fontWeight: '900',
       }}
       className={`buy-now transition flex gap-2 items-center justify-center ease-in-out duration-500 hover:bg-darkblue hover:bg-opacity-80 hover:border-2 border-darkblue mt-8 px-12 py-2 capitalize rounded-md bg-darkblue text-white ${CaladeaF}`}
-      href="https://wa.me/923371112221"
+      href="https://wa.me/drhamzaashraf"
     >
       Buy Now <span className='text-[#FDD750] text-sm'>-{item.off} OFF</span>
     </Link>
