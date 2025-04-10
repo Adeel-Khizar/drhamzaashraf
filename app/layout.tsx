@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        suppressHydrationWarning>
         
         <link rel="icon" href="/favicon.png" sizes="any" />
         {children}
