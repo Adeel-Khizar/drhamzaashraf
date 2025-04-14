@@ -15,6 +15,8 @@ const Footer = () => {
   	 				<li>Gold Medalist</li>
   	 				<li>Distinction Holder</li>
   	 				<li>Registered Medical Practitioner(PMDC)</li>
+            <li>Olevels ( Cambridge University UK)</li>
+            <li>Best Graduate (BSS)</li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
@@ -46,8 +48,12 @@ const Footer = () => {
           Zia Hospital and Maternity Complex Main Ferozpur Road, Lahore
             <br ></br>
             drhamzaashrafzia@gmail.com
-  <br></br>
- 03371112221
+             <br></br>
+             03371112221
+             <br></br>
+             03371112225
+             <br></br>
+              03264747478
           </p>
   	 			<div className="social-links">
   	 				<a target='_blank' href="https://www.tiktok.com/@doctorhamzaashraf?_t=8mkBEaepvRo&_r=1 "> <svg
