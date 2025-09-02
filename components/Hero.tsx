@@ -112,43 +112,43 @@ const Hero = () => {
       });
 
       // Image animation: Zoom-in and fade-in effect on load
-      gsap.fromTo(
-        imageRef.current,
-        {
-          opacity: 0,
-          scale: 0.8,
-          y: 100,
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          y: 0,
-          duration: 2,
-          ease: 'power4.out',
-        }
-      );
+      // gsap.fromTo(
+      //   imageRef.current,
+      //   {
+      //     opacity: 0,
+      //     scale: 0.8,
+      //     y: 100,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     scale: 1,
+      //     y: 0,
+      //     duration: 2,
+      //     ease: 'power4.out',
+      //   }
+      // );
 
       // ScrollTrigger for image (fade-in and slide effect as the user scrolls)
-      gsap.fromTo(
-        imageRef.current,
-        {
-          opacity: 0,
-          y: 100,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 2,
-          ease: 'power4.out',
-          scrollTrigger: {
-            trigger: imageRef.current,
-            start: 'top 80%',
-            end: 'bottom 20%',
-            scrub: true,
-            toggleActions: 'play none none none',
-          },
-        }
-      );
+      // gsap.fromTo(
+      //   imageRef.current,
+      //   {
+      //     opacity: 0,
+      //     y: 100,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     y: 0,
+      //     duration: 2,
+      //     ease: 'power4.out',
+      //     scrollTrigger: {
+      //       trigger: imageRef.current,
+      //       start: 'top 80%',
+      //       end: 'bottom 20%',
+      //       scrub: true,
+      //       toggleActions: 'play none none none',
+      //     },
+      //   }
+      // );
     }
   }, []);
 
@@ -197,7 +197,7 @@ const Hero = () => {
             <img
                className=' '
               ref={imageRef}
-              src='/image (3) (4).png'
+              src='/drhamzaashraf-min.png'
               height={1000}
               width={1000}
               alt="Dr. Hamza Ashraf"

@@ -55,26 +55,26 @@ const Reviews = () => {
       );
 
       // Animate video
-      gsap.fromTo(
-        `.review-video-${index}`,
-        {
-          opacity: 0,
-          scale: 0.9,
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.2,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: `.review-video-${index}`,
-            start: 'top 80%',
-            end: 'top 20%',
-            scrub: 0.5,
-            markers: false,
-          },
-        }
-      );
+      // gsap.fromTo(
+      //   `.review-video-${index}`,
+      //   {
+      //     opacity: 0,
+      //     scale: 0.9,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     scale: 1,
+      //     duration: 1.2,
+      //     ease: 'power3.out',
+      //     scrollTrigger: {
+      //       trigger: `.review-video-${index}`,
+      //       start: 'top 80%',
+      //       end: 'top 20%',
+      //       scrub: 0.5,
+      //       markers: false,
+      //     },
+      //   }
+      // );
     });
   }, []);
 
