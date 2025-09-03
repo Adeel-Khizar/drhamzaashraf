@@ -6,6 +6,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 import Link from 'next/link';
+import Image from "next/image";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -120,12 +121,13 @@ const Products = () => {
       }}>Best Seller</span>
     )}
     <div>
-      <img
+      <Image
         className="product-image h-[280px] w-auto"
         src={item.image}
         height={500}
         width={500}
         alt={item.title}
+        priority
       />
     </div>
     <h3

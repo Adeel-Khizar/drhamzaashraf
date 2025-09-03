@@ -5,6 +5,7 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Image from "next/image";
 
 const About = () => {
   useEffect(() => {
@@ -212,7 +213,13 @@ const About = () => {
         </Link>
       </div>
       <div className="about__left flex items-start justify-center w-full md:w-1/2">
-        <img className='w-[100%] h-auto' src='about 1 (1).png' height={800} width={800} />
+        <Image
+          className='w-[100%] h-auto'
+          src='/about 1 (1).png'
+          height={800}
+          width={800}
+          alt='About Dr. Hamza Ashraf'
+        />
       </div>
     </div>
   );

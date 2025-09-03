@@ -204,14 +204,6 @@ const Hero = () => {
               height={1000}
               priority
             />
-            {/* <img
-               className=' '
-              ref={imageRef}
-              src='/drhamzaashraf-min.png'
-              height={1000}
-              width={1000}
-              alt="Dr. Hamza Ashraf"
-            /> */}
           </div>
         </div>
       </div>
