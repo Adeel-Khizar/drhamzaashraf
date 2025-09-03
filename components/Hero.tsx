@@ -8,6 +8,8 @@ import Header from './Header';
 import Link from 'next/link';
 import { CaladeaF } from '@/fonts';
 
+import Image from "next/image";
+
 const Hero = () => {
   const boxRef = useRef<HTMLDivElement>(null);  // Properly typed ref
   const imageRef = useRef<HTMLImageElement>(null);  // Image reference for animation
@@ -194,14 +196,22 @@ const Hero = () => {
             </div>
           </div>
           <div className='w-[70%] md:w-[50%] h-[70%]'>
-            <img
+            <Image
+              ref={imageRef}
+              src='/drhamzaashraf-min.png'
+              alt="Dr. Hamza Ashraf"
+              width={1000}
+              height={1000}
+              priority
+            />
+            {/* <img
                className=' '
               ref={imageRef}
               src='/drhamzaashraf-min.png'
               height={1000}
               width={1000}
               alt="Dr. Hamza Ashraf"
-            />
+            /> */}
           </div>
         </div>
       </div>
