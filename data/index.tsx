@@ -83,45 +83,45 @@ export const productsInfo = [
   
   {
     id:1,
-    image:'/p2.png',
+    image:'/p22.png',
     title: 'Natural Silajit Supplement',
     off: '44%',
     description: "Are you facing issues in your sexual life and want to boost your energy stamina and performance? This Silajit is 100% pure and without any side effects."
   },  
   {
     id:2,
-    image:'/p3.png',
+    image:'/p33.png',
     off: '50%',
     title: 'Weight Loss Supplement',
     description: "Do you feel ashamed of being overweight and want a slim figure? Order this weight loss supplement by Dr Hamza and lose upto 5 kg weight per month."
   },
   {
     id:3,
+    image:'/p44.png',
+    off: '45%',
+    title: 'Female PCOS Supplement',
+    description: 'The supplement is for females suffering from hirsutism , hormonal imbalance and irregular periods. It will boost your fertility.'
+  },
+  {
+    id:4,
     image:'/p4.png',
     title: 'Female Vaginal Wash',
     off: '35%',
     description: "Females with Leukorrhea and smelly discharge can use this medicated lotion. It is the choice of Doctor Hamza for his patients."
   },
   {
-    id:4,
+    id:5,
     image:'/p5.png',
     off: '55%',
     title: 'Erectile Dysfunction Gel',
     description: "Patients suffering from Erectile Dysfunction and Premature Ejaculation can use this imported gel recommended by Dr Hamza and make their sexual life better."
   },
   {
-    id:5,
+    id:6,
     image:'/p6.png',
     title: 'Male Semen Booster',
     off: '50%',
     description: 'Are you facing problems in Sperm Count , Motility and Morphology? DONT WORRY! Sperm Booster Sachet is here to solve all your problems.'
-  },
-  {
-    id:6,
-    image:'/femalepos 1 (2).png',
-    off: '45%',
-    title: 'Female PCOS Supplement',
-    description: 'The supplement is for females suffering from hirsutism , hormonal imbalance and irregular periods. It will boost your fertility.'
   },
 ]
 

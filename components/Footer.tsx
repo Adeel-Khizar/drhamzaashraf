@@ -17,6 +17,8 @@ const Footer = () => {
   	 				<li>Registered Medical Practitioner(PMDC)</li>
             <li>Olevels ( Cambridge University UK)</li>
             <li>Best Graduate (BSS)</li>
+            <li>Diplomate Andrology (UK)</li>
+            <li>Diplomate ART (USA)</li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
@@ -49,11 +51,15 @@ const Footer = () => {
             <br ></br>
             drhamzaashrafzia@gmail.com
              <br></br>
-             03371112221
+              03371112221
              <br></br>
-             03371112225
+              03371112225
              <br></br>
               03264747478
+             <br></br>
+              03371112226
+             <br></br>
+              03371112229
           </p>
   	 			<div className="social-links">
   	 				<a target='_blank' href="https://www.tiktok.com/@doctorhamzaashraf?_t=8mkBEaepvRo&_r=1 "> <svg
